@@ -1,0 +1,4 @@
+Deposito = float(input("Digite o deposito: "))
+rendeu = Deposito * 1.003
+
+print("o seu Deposito após 1 mês rendeu:", rendeu)

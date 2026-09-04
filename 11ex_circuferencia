@@ -1,0 +1,5 @@
+raio = float(input("Digite o raio: "))
+pi = 3.14
+comprimento = 2 * pi * raio
+
+print("O comprimento é de: ", comprimento)

@@ -1,0 +1,8 @@
+tempo = float(input("digite o tempo de viagem em horas: "))
+velocidade_media = float(input("digite a velocidade média em km/h: "))
+
+distancia = tempo * velocidade_media
+litrosgastos = distancia / 12
+
+print("A distancia andada foi de: ", distancia)
+print("A quantia de litros gastos foi de: ", litrosgastos,"km")

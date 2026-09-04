@@ -1,0 +1,10 @@
+ano_nasc = int(input("Digite o ano do seu nascimento: "))
+
+ano_atual = int(input("Digite o ano atual: "))
+
+idade = ano_atual - ano_nasc
+
+futura_idade = idade + 17
+
+print("Sua idade daqui 17 anos será de: ", futura_idade)
+

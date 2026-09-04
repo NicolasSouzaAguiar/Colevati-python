@@ -1,0 +1,11 @@
+horas = float(input("Digite a quantidade de horas trabalhadas: "))
+valor_hora = float(input("Digite o valor da hora: "))
+desconto = float(input("Digite o percentual de desconto: "))
+dependentes = int(input("Digite o numero de dependentes: "))
+
+salario = horas * valor_hora
+valor_desconto = salario * desconto / 100
+salario_liquido = salario - valor_desconto
+salario_liquido = salario_liquido + (dependentes*100)
+
+print("salario a receber: ", salario_liquido)

@@ -1,0 +1,5 @@
+angulo1 = float(input("digite o primeiro ângulo: "))
+angulo2 = float(input("digite o segundo ângulo: "))
+
+angulo3 = 180-angulo1-angulo2
+print("O terceiro ângulo é ", angulo3)

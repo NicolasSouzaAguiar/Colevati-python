@@ -1,0 +1,9 @@
+x = int(input("Digite o X: "))
+y = int(input("Digite o Y: "))
+
+z = x
+x = y
+y = z
+
+print("X: ", x)
+print("Y: ", y)
