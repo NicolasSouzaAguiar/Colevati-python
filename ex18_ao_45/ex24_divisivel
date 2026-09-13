@@ -1,0 +1,6 @@
+n = int(input("digite um número: "))
+
+if n % 2 == 0 and n % 3 == 0:
+    print("é divisível por 2 e 3")
+else:
+    print("não é divisível por 2 e 3")

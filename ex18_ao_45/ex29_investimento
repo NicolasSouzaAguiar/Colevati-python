@@ -1,0 +1,12 @@
+valor = float(input("insira o valor do investimento: "))
+investimento = int(input("escolha o investimento (1-Poupança / 2-Renda fixa): "))
+
+if investimento == 1:
+    valor = valor * 1.03
+    print("depois de 30 dias você tera: ", valor)
+    
+elif investimento == 2:
+    valor = valor * 1.05
+    print("depois de 30 dias você tera: ", valor)
+else:
+    print("Tipo de investimento inválido")

@@ -1,0 +1,16 @@
+valor1 = int(input("Digite o primeiro número: "))
+valor2 = int(input("Digite o segundo número: "))
+
+if valor1 > valor2:
+    maior = valor1
+    menor = valor2
+else:
+    maior = valor2
+    menor = valor1
+
+soma = 0
+
+for i in range(menor + 1, maior):
+    if i % 2 != 0:
+       soma = soma + i
+print("soma dos ímpares:", soma)
