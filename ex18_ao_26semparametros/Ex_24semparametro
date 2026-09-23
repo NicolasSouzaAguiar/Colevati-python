@@ -1,0 +1,20 @@
+n: int = 0
+
+def divisao():
+        global n
+
+        if n % 2 == 0 and n % 3 == 0:
+            print("é divisível por 2 e 3")
+        else:
+            print("não é divisível por 2 e 3")
+
+def main ():
+        
+        global n
+
+        n = int(input("digite um número: "))
+
+        divisao()
+
+if (__name__ == '__main__'):
+    main()

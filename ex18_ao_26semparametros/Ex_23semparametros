@@ -1,0 +1,35 @@
+valor1: int = 0
+valor2: int = 0
+valor3: int = 0
+valor4: int = 0
+
+def crescente():
+    global valor1
+    global valor2
+    global valor3
+    global valor4
+
+    if valor4 < valor1:
+        print(valor4,valor1,valor2,valor3)
+    elif valor4 < valor2:
+        print(valor1,valor4,valor2,valor3)
+    elif valor4 < valor3:
+        print(valor1,valor2,valor4,valor3)
+    else:
+        print(valor1,valor2,valor3,valor4)
+
+def main():
+    global valor1
+    global valor2
+    global valor3
+    global valor4    
+        
+    valor1 = int(input("digite o primeiro valor: "))
+    valor2 = int(input("digite um valor maior que o anterior: "))
+    valor3 = int(input("digite um valor maior que o anterior: "))
+    valor4 = int(input("digite o quarto valor : "))
+
+    crescente()
+
+if (__name__ == '__main__'):
+     main()

@@ -1,0 +1,38 @@
+a: float = 0
+b: float = 0
+c: float = 0
+x: float = 0
+x1: float = 0
+x2: float = 0
+def delta():
+    global a
+    global b
+    global c
+
+
+    delta= b ** 2 - 4 * a * c
+
+    if delta < 0:
+        print("não tem raizes reais")
+    elif delta == 0:
+        x = -b / (2 * a)
+        print("tem uma raiz real: ", x)
+    else:
+        x1 = (-b + delta ** 0.5) / (2 * a)
+        x2 = (-b - delta ** 0.5) / (2 * a)
+
+        print("X1 =", x1)
+        print("X2 =", x2)
+
+def main():
+    global a
+    global b
+    global c
+
+    a = float(input("digite A:"))
+    b = float(input("digite B:"))
+    c = float(input("digite C:"))
+
+    delta()
+if (__name__ == '__main__'):
+     main()

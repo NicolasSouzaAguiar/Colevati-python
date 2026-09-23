@@ -1,0 +1,29 @@
+a: int = 0
+b: int = 0
+
+def multiplo():
+    global a
+    global b
+    if a > b:
+        maior = a
+        menor = b
+    else:
+        maior = b
+        menor = a
+
+    if maior % menor == 0:
+        print("O maior é múltiplo do menor")
+    else:
+        print("O maior não é múltiplo do menor")
+
+def main():
+    global a
+    global b
+
+    a = int(input("Digite o primeiro número: "))
+    b = int(input("Digite o segundo número: "))
+
+    multiplo()
+
+if (__name__ == '__main__'):
+    main()

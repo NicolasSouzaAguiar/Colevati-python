@@ -1,0 +1,54 @@
+hora_inicio:int = 0
+min_inicio:int = 0
+dia_inicio:int = 0
+
+hora_fim:int = 0
+min_fim:int = 0
+dia_fim:int = 0
+
+def hora_jogo ():
+    global hora_inicio
+    global min_inicio
+    global dia_inicio
+
+    global hora_fim
+    global min_fim
+    global dia_fim
+
+    inicio = hora_inicio * 60 + min_inicio
+    fim = hora_fim * 60 + min_fim
+
+    if dia_fim > dia_inicio:
+        fim = fim + 24 * 60
+
+    duracao = fim - inicio
+
+    horas = duracao // 60
+    minutos = duracao % 60
+
+    print("Duração:", horas, "horas e", minutos, "minutos")
+
+def main ():
+
+    global hora_inicio
+    global min_inicio
+    global dia_inicio
+
+    global hora_fim
+    global min_fim
+    global dia_fim
+
+    hora_inicio = int(input("Hora de início: "))
+    min_inicio = int(input("Minuto de início: "))
+    dia_inicio = int(input("Dia de início: "))
+
+    hora_fim = int(input("Hora de final: "))
+    min_fim = int(input("Minuto de final: "))
+    dia_fim = int(input("Dia de final: "))
+    
+    hora_jogo()
+
+if (__name__ == '__main__'):
+    main()
+
+
